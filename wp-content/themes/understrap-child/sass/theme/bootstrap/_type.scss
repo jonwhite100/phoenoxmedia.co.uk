@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'kunstler_scriptregular';
+	font-style: normal;
+	font-weight: normal;
+    src: url('#{$understrap-font-path}/kunstler-webfont.eot'),
+		url('#{$understrap-font-path}/kunstler-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$understrap-font-path}/kunstler-webfont.woff') format('woff'),
+         url('#{$understrap-font-path}/kunstler-webfont.ttf') format('truetype'),
+         url('#{$understrap-font-path}/kunstler-webfont.svg#kunstler_scriptregular') format('svg');
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+p,
+li {
+    font-size: $font-size-sm;
+    line-height: 1.8;
+}
+
+.section-heading {
+	display: inline-block;
+	position: relative;
+    margin-bottom: $s-xl;
+	padding-bottom: 2rem;
+    font-weight: 700;
+}
+
+///
+// the bar header that contains the page title
+///
+.entry-header {
+	width: 100%;
+	padding-top: $s-lg;
+	padding-bottom: $s-lg;
+	background-color: $primary;
+
+    .entry-title,
+    .entry-meta {
+        color: $white;
+		text-align: center;
+    }
+}
+
+///
+// quotes on testimonials
+///
+.card-testimonials {
+	span {
+		color: gray('500');
+		font-style: italic;
+	}
+}

@@ -1,0 +1,21 @@
+///
+//	ScrollReveal - https://scrollrevealjs.org/
+///
+/// 1. https://scrollrevealjs.org/guide/user-experience.html
+.sr {
+		// any figue block (wraps images) and gallery images
+		.wp-block-image,
+		.blocks-gallery-item {
+			visibility: hidden;
+		}
+		// home page testimonials section
+		.section-testimonials {
+			.carousel {
+				visibility: hidden;
+			}
+		}
+		// All the cards in the testimonials
+		.card-testimonials {
+			visibility: hidden;
+		}
+	}

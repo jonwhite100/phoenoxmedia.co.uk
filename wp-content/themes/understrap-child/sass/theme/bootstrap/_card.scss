@@ -1,0 +1,143 @@
+//
+// Override BS4
+// Variations:
+//      card-about: about us section, home page
+//      card-blog-post: blog summary page
+//      card-deck: used in the about us, home page section (right side cards)
+//      card-pricing: home page, pricing section
+
+//
+.card {
+    .card-deck & {
+        margin-bottom: $s-md;
+    }
+}
+
+.card-about {
+    border-width: 0;
+
+    hr {
+        margin-top: $s-xs;
+        margin-bottom: $s-md;
+    }
+}
+
+.card-testimonials {
+	margin-bottom: $s-md;
+}
+
+.card-pricing {
+    position: relative;
+    margin-bottom: $s-lg;
+    border-width: 1px;
+	border-radius: .3rem;
+	background-color: $white;
+	overflow: hidden;
+
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 0;
+    }
+}
+
+.card-body {
+    .card-about & {
+        padding: 0;
+    }
+
+    .card-deck & {
+        i {
+            font-size: 4rem;
+        }
+    }
+
+    .card-pricing & {
+        padding: 0;
+    }
+}
+
+.card-title-container {
+    .card-pricing & {
+		border-bottom: 1px solid gray('200');
+        background-color: lighten($secondary, 35%);
+
+        &.active {
+            background-color: $primary;
+        }
+    }
+}
+
+.card-title,
+.card-subtitle {
+    .card-about & {
+        color: $primary;
+    }
+
+    .card-pricing & {
+        color: gray('900');
+
+        .active & {
+            color: $white;
+        }
+    }
+}
+
+.card-title {
+    .card-blog-post & {
+        text-transform: capitalize;
+
+        a {
+            color: gray('900');
+
+			&:hover {
+            	color: $primary;
+			}
+        }
+    }
+
+    .card-pricing & {
+        font-weight: 600;
+    }
+}
+
+.card-subtitle {
+    margin-top: 0;
+    font-weight: 900;
+
+    sup {
+        margin-right: 0;
+        font-size: $h3-font-size;
+        font-weight: 600;
+    }
+
+    sub {
+		margin-left: -5px;
+        font-size: $h4-font-size;
+        font-weight: 400;
+    }
+
+    .card-about & {
+        margin-bottom: $s-sm;
+		color: gray('900');
+        font-size: $h2-font-size;
+        line-height: 1.4;
+		text-transform: capitalize;
+    }
+
+    .card-pricing & {
+        font-size: $h1-font-size * 1.4;
+        line-height: 1;
+    }
+}
+
+.card-body-heading {
+    margin-bottom: $s-md;
+}
+
+/// 1. the paragraph already has 1rem margin bottom (added together = 2rem)
+.card-text {
+    .card-pricing & {
+        padding-right: 2rem;
+        padding-bottom: .75rem; // 1
+        padding-left: 2rem;
+    }
+}

@@ -1,0 +1,35 @@
+///
+// blog post. loop-templates/content-single.php
+///
+
+/// 1. single-post class is applied to the body tag
+.single-post {
+    background-color: $c-single-post-bg-color;
+
+    header {
+        a {
+            color: $white;
+        }
+    }
+
+    .entry-header {
+        width: 100%;
+        padding-top: $s-lg;
+        padding-bottom: $s-lg;
+        background-color: $primary;
+    }
+
+    .entry-title,
+    .entry-meta {
+        color: $white;
+		text-align: center;
+    }
+
+    .card-body {
+        padding: $s-lg;
+    }
+
+    .wp-post-image {
+        border-bottom: 1px solid gray('200');
+    }
+}

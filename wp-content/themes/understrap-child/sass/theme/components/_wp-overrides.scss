@@ -1,0 +1,15 @@
+///
+// Override WordPress styling
+///
+
+// HOw images are displayed in articles
+.wp-block-image {
+	figcaption {
+		text-align: left;
+	}
+}
+
+// Override recaptcha 3
+.grecaptcha-badge {
+	opacity: 0;
+}

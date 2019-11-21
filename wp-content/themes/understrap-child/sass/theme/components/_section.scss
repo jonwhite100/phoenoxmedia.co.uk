@@ -1,0 +1,48 @@
+.section {
+    position: relative;
+    padding-top: $s-xl;
+    padding-bottom: $s-xl * 2;
+	z-index: 1;
+}
+
+.section-newsletter,
+.section-whatever {
+    h2,
+    p {
+        color: $white;
+    }
+}
+
+.section-scroll-to {
+    display: flex;
+    margin-top: $s-lg;
+}
+
+.section-testimonials {
+    padding-bottom: $s-xl * 1;
+}
+
+/// 1. puts the dark overlay over the bg image
+// TODO: move this somewhere better
+.fixed-bg {
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    // z-index: -1;
+
+    &-newsletter {
+        background-image: url('#{$path-to-uploads}uploads/2019/11/spread02-1.jpg');
+    }
+
+    &::after { // 1
+        position: absolute;
+        top: 0;
+        left: 0;
+		width: 100%;
+		height: 100%;
+		background: $black none repeat scroll 0 0;
+        content: '';
+        opacity: .5;
+		z-index: -2;
+    }
+}

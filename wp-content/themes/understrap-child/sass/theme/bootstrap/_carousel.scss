@@ -1,0 +1,33 @@
+.carousel-inner {
+    .section-testimonials & {
+        min-height: 10rem;
+    }
+}
+
+.carousel-item {
+    .section-testimonials & {
+        text-align: center;
+
+        i {
+            color: $primary;
+			font-size: $h1-font-size * 1.5;
+        }
+
+        p {
+            width: 66%;
+			margin: 0 auto 1rem;
+        }
+
+        .position {
+            color: $secondary;
+			font-size: $font-size-base * .85;
+        }
+    }
+}
+
+.carousel-indicators {
+    .section-testimonials & {
+        bottom: -30px;
+        margin-bottom: 0;
+    }
+}

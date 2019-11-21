@@ -1,5 +1,5 @@
 // Use this file to overwrite the basic Bootstrap variables and add your own variables
-// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder. 
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
 // Just copy a variable from /sass/bootstrap/_variables.scss, paste it here and edit the value.
 // As example you find one of the most important Bootstrap variable below: $brand-primary.
 // Thats the ugly Bootstrap blue used for all the links, primary buttons etc.
@@ -9,6 +9,88 @@
 //
 // Color system
 //
+$primary: #04678f; // logo darker blue
+$secondary: #126972; //logo light blue. original theme #4ac4f3
 
-$primary: #7C008C;
+$white: #fff !default;
+$black: #000 !default;
+$grey: #767676;
+$grey-light: #9e9e9e !default;
+$grey-lightest: #edf5ff;
 
+$brand-danger:          #e22626 !default;
+
+// non-site variables
+$c-twitter: #00b6f1 !default;
+$c-pinterest: #bd081c;
+$c-facebook: #3b5998;
+$c-g-plus: #df4a32;
+$c-vimeo: #1ab7ea;
+$c-instagram: #cd486b;
+
+// path to wp-content/uploads to use images in css
+$path-to-uploads: '../../../' !default;
+
+// buttons
+$border-radius-lg: 3rem !default;
+$c-btn-pulsing-box-shadow: rgba(232, 76, 61, 0) !default;
+
+// carousel
+$carousel-control-color: $primary !default;
+$carousel-indicator-active-bg: $primary !default;
+
+// font font-family
+$font-size-base: 1rem !default;
+
+$font-family-sans-serif: 'Open Sans', sans-serif !default;
+$headings-font-family:        'Poppins', sans-serif !default;
+$bonappetit-font-family: 'kunstler_scriptregular', serif !default;
+$headings-font-weight: 600 !default;
+$understrap-font-path:        '../fonts' !default;
+
+$h1-font-size:                $font-size-base * 2.25 !default;
+$h2-font-size:                $font-size-base * 1.75 !default;
+$h3-font-size:                $font-size-base * 1.5 !default;
+$h4-font-size:                $font-size-base * 1.1 !default;
+$h5-font-size:                $font-size-base * 1.1 !default;
+$h6-font-size:                $font-size-base !default;
+
+// jumbotron
+$jumbotron-bg: transparent !default;
+$jumbotron-padding: 0 !default;
+$c-jumbotron-h2-bg: rgba(0, 0, 0, .5) !default;
+$c-jumbotron-base-bg: $white !default;
+
+// navbar
+$c-navbar-bg: $white;
+$c-navbar-border: darken($white, 50%);
+$c-navbar-box-shadow: rgba(122, 120, 122, .99) !default;
+$c-navbar-bg-shrink: rgba(250, 250, 250, 1) !default;
+
+$navbar-light-color:                rgba($primary, .5) !default;
+$navbar-light-hover-color:          rgba($primary, .7) !default;
+$navbar-light-active-color:         rgba($primary, .9) !default;
+$navbar-light-disabled-color:       rgba($primary, .3) !default;
+
+
+// Shadows
+$box-shadow: 0 0 6px darken($white, 25%) !default;
+
+// Spacers
+$unit: 1.5rem;
+
+$s-md: $unit;
+$s-sm: $s-md * .75;
+$s-xs: $s-sm * .75;
+$s-lg: $s-md * 1.5;
+$s-xl: $s-lg * 1.5;
+
+// Card
+$card-spacer-y: .5rem !default; // 8px
+
+// List group
+$c-list-group-item-icon: $secondary !default;
+$c-list-group-item-icon-cross: $brand-danger !default;
+
+// Blog single post
+$c-single-post-bg-color: darken($white, 2%) !default;
