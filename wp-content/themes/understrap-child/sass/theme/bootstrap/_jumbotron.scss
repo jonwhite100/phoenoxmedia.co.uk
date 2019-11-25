@@ -2,20 +2,30 @@
 // Override BS4
 //
 
+
 .jumbotron {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 30rem;
+	min-height: $s-jumbotron-height / 2;
 	border-radius: 0;
 	overflow: hidden;
+
+	@include media-breakpoint-up(md) {
+		min-height: $s-jumbotron-height / 1.5;
+	}
+
+	@include media-breakpoint-up(lg) {
+		min-height: $s-jumbotron-height;
+	}
 }
 
 .jumbtron-bg {
 	position: absolute;
 	width: 100%;
-	height: 30rem;
+	height: $s-jumbotron-height / 2;
+	min-height: $s-jumbotron-height / 2;
 	overflow: hidden;
 	z-index: 0;
 
@@ -23,6 +33,14 @@
 		width: 100%;
 		min-height: 100%;
 		object-fit: cover;
+	}
+
+	@include media-breakpoint-up(md) {
+		min-height: $s-jumbotron-height / 1.5;
+	}
+
+	@include media-breakpoint-up(lg) {
+		min-height: $s-jumbotron-height;
 	}
 }
 
@@ -73,6 +91,7 @@
 }
 
 .jumbotron-base {
+	display: none;
 	width: 100%;
 
 	&-curve {

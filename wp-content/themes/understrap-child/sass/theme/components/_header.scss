@@ -1,50 +1,41 @@
-#loader {
-	.no-js & {
-		display: none;
-	}
+// Leave space at the top of the page for the fixed navbar.
+// .site {
+//     margin-top: $s-xl;
+//
+// 	@include media-breakpoint-up(md) {
+// 		margin-top: $s-xl;
+// 	}
+//
+// 	@include media-breakpoint-up(lg) {
+// 		margin-top: $s-xl + $s-xs;
+// 	}
+// }
 
-	.js & {
-		display: block;
-		position: absolute;
-		top: 0;
-		left: 100px;
-	}
+// Max size for the logo
+.img-fluid {
+	max-width: 5rem;
+	max-height: 5rem;
+	transition: all .33s ease-in-out;
 }
 
-.se-pre-con {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: url('images/preloader.gif') center no-repeat $white;
-	z-index: 9999;
-}
-
-// temp logo sizing
-.custom-logo-link {
-	img {
-		max-width: 200px;
-	}
-}
-
-#wpadminbar {
-	display: none;
-}
-
-// Navbar shrinking
 .navbar {
-    padding: 1rem;
-    background-color: $c-navbar-bg;
-    box-shadow: 0 3px 6px 0 $c-navbar-box-shadow;
+	padding: $s-sm;
+	// background-color: $c-navbar-bg;
 
-    // Shrink the header
+	// Shrink the header
 	&.shrink {
 		top: 0;
-		height: 92px;
+		// height: 92px;
 		padding: $s-xs $s-sm;
 		transition: all .33s ease-in-out;
 		background-color: $c-navbar-bg-shrink;
+		box-shadow: 0 3px 6px 0 $c-navbar-box-shadow;
+
+		.img-fluid {
+			max-width: 3rem;
+			max-height: 3rem;
+			transition: all .33s ease-in-out;
+		}
 
 		@include media-breakpoint-down(xs) {
 			height: 75px;
@@ -56,29 +47,20 @@
 	}
 }
 
-.navbar-expand-md {
-    .navbar-nav {
-        .nav-link {
-            padding-right: $s-sm;
-            padding-left: $s-sm;
-        }
-    }
-}
 
-// style the burger menu dropdown
 .navbar-nav {
 	padding: 0 $s-sm;
 	transition: all .33s ease-in-out;
-
-	.show & {
-		background-color: $c-navbar-bg;
-	}
+	font-size: $font-size-base * .85;
 
 	.shrink & {
-		background-color: $c-navbar-bg-shrink;
+		.nav-link {
+			color: $navbar-light-color-shrink;
+		}
 	}
 }
 
+// style the burger menu dropdown
 .navbar-brand {
 	transition: font-size .25s;
     font-family: $bonappetit-font-family;
@@ -116,22 +98,23 @@
 	}
 }
 
-// Leave space at the top of the page for the fixed navbar.
-.site {
-    margin-top: $s-xl;
-
-	@include media-breakpoint-up(md) {
-		margin-top: $s-xl;
-	}
-
-	@include media-breakpoint-up(lg) {
-		margin-top: $s-xl + $s-xs;
-	}
-}
-
 // hide page title on home page
-.home {
-    .entry-header {
-        display: none;
-    }
-}
+// .home {
+// 	.entry-header {
+// 		display: none;
+// 	}
+// }
+
+//
+// #wpadminbar {
+// 	display: none;
+// }
+
+// .navbar-expand-md {
+//     .navbar-nav {
+//         .nav-link {
+//             padding-right: $s-sm;
+//             padding-left: $s-sm;
+//         }
+//     }
+// }

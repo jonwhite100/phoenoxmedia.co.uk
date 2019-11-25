@@ -46,26 +46,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<nav class="navbar navbar-light navbar-expand-lg fixed-top">
 
 		<?php if ( 'container' == $container ) : ?>
-			<div class="container">
+			<div class="container-fluid">
 		<?php endif; ?>
 
 					<!-- Your site title as branding in the menu -->
 					<?php if ( ! has_custom_logo() ) { ?>
-
 						<?php if ( is_front_page() && is_home() ) : ?>
-
 							<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
-
 						<?php else : ?>
-
-							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url">
-								<div><?php bloginfo( 'name' ); ?></div>
-								<div class="navbar-brand-sub"><?php bloginfo( 'description' ); ?></div>
-							</a>
-
+							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
 						<?php endif; ?>
-
-
 					<?php } else {
 						the_custom_logo();
 					} ?><!-- end custom logo -->

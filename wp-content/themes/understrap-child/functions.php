@@ -124,3 +124,22 @@ function register_additional_childtheme_sidebars() {
 }
 
 add_action( 'init', 'register_additional_childtheme_sidebars' );
+
+///
+// Speeding the site up: enqueue Recaptcha 3 until it's needed with CF7
+///
+// Remove wpcf7 script
+add_filter( 'wpcf7_load_js', '__return_false' );
+
+// Take recaptcha out and load only on the contact template
+function hold_recaptcha_load() {
+    wp_dequeue_script( 'google-recaptcha' );
+
+    if ( is_page_template( 'page-contact.php' ) ) {
+        if ( function_exists( 'wpcf7_enqueue_scripts' ) ) {
+            wpcf7_enqueue_scripts();
+            wp_enqueue_script( 'google-recaptcha' );
+        }
+    }
+}
+add_action( 'wp_enqueue_scripts', 'hold_recaptcha_load' );

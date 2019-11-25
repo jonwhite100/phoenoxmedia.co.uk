@@ -1,19 +1,17 @@
 ///
 // Preloader
 ///
-.no-js {
-    #loader {
-        display: none;
-    }
-}
+#loader {
+	.no-js & {
+		display: none;
+	}
 
-.js {
-    #loader {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 100px;
-    }
+	.js & {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 100px;
+	}
 }
 
 .se-pre-con {
