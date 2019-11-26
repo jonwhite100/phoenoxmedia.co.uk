@@ -29,7 +29,7 @@ $c-vimeo: #1ab7ea;
 $c-instagram: #cd486b;
 
 // font font-family
-$font-size-base: 1rem !default;
+$font-size-base: 1rem * 0.85 !default;
 
 $font-family-sans-serif: 'Open Sans', sans-serif !default;
 $headings-font-family:        'Poppins', sans-serif !default;
@@ -44,6 +44,8 @@ $h4-font-size:                $font-size-base * 1.1 !default;
 $h5-font-size:                $font-size-base * 1.1 !default;
 $h6-font-size:                $font-size-base !default;
 
+$lead-font-size:              $font-size-base * 1.45 !default;
+
 // path to wp-content/uploads to use images in css
 $path-to-uploads: '../../../' !default;
 
@@ -52,13 +54,14 @@ $border-radius-lg: 3rem !default;
 $c-btn-pulsing-box-shadow: rgba(232, 76, 61, 0) !default;
 
 // Spacers
-$unit: 1rem; // 16px;
+$spacer: 1rem; // 16px;
 
-$s-md: $unit;
-$s-sm: $s-md * .75;
-$s-xs: $s-sm * .75;
-$s-lg: $s-md * 1.5;
-$s-xl: $s-lg * 1.5;
+$s-sm: $spacer;
+$s-xs: $s-sm / 2;
+$s-xxs: $s-xs / 2;
+$s-md: $s-sm * 2;
+$s-lg: $s-md * 2;
+$s-xl: $s-lg + $s-md;
 
 // carousel
 $carousel-control-color: $primary !default;
@@ -69,7 +72,7 @@ $jumbotron-bg: transparent !default;
 $jumbotron-padding: 0 !default;
 $c-jumbotron-h2-bg: rgba(0, 0, 0, .5) !default;
 $c-jumbotron-base-bg: $white !default;
-$s-jumbotron-height: $s-md * 55 !default;
+$s-jumbotron-height: $s-xl * 9 !default;
 
 // navbar
 $c-navbar-bg: transparent;
@@ -83,12 +86,15 @@ $navbar-light-hover-color:          rgba($primary, .7) !default;
 $navbar-light-active-color:         rgba($primary, .7) !default;
 $navbar-light-disabled-color:       rgba($primary, .3) !default;
 
+$navbar-light-toggler-border-color: $white;
+$navbar-light-toggler-border-color-shrink: $primary;
 
 // Shadows
 $box-shadow: 0 0 6px darken($white, 25%) !default;
 
 // Card
 $card-spacer-y: .5rem !default; // 8px
+$card-border-radius: 0 !default;
 
 // List group
 $c-list-group-item-icon: $secondary !default;

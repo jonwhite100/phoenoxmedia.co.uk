@@ -1,0 +1,94 @@
+//
+// Override BS4
+//
+ul {
+	.section-facilities & {
+		padding-top: $s-sm;
+
+		li {
+			text-align: left;
+		}
+
+		i {
+			margin-right: $s-xxs;
+			color: $primary;
+		}
+
+		@include media-breakpoint-up(md) {
+			column-count: 3;
+		}
+	}
+}
+
+// list-group-about is non BS4 class
+// .list-group-about,
+// .list-group-blog-site {
+//     .list-group-item {
+//         margin-bottom: $s-xs;
+//         padding: 0;
+// 		border: 0;
+//         color: gray('900');
+//         font-weight: 400;
+//         text-transform: capitalize;
+//     }
+//
+//     i {
+//         position: relative;
+// 		width: $s-md * .9;
+//         height: $s-md * .9;
+// 		margin-right: $s-sm;
+// 		border-radius: 50%;
+//         background: $primary none repeat scroll 0 0;
+//         color: $white;
+// 		font-size: $font-size-base * .75;
+// 		line-height: $s-md;
+// 		text-align: center;
+// 		z-index: 1;
+//
+//         &::after {
+//             position: absolute;
+//             top: 0;
+//             left: 0;
+// 			width: $s-md * 1.225;
+// 			height: $s-md * 1.225;
+// 			margin-top: -.25rem;
+//             margin-left: -.25rem;
+// 			border-radius: 50%;
+// 			background: $primary none repeat scroll 0 0;
+// 			content: '';
+// 			opacity: .5;
+// 			z-index: -1;
+//
+//         }
+//     }
+// }
+//
+// .list-group-blog-site {
+//     .list-group-item {
+//         text-transform: none;
+//     }
+// }
+
+// list-group-pricing is non BS4 class
+// .list-group-pricing {
+//     margin-bottom: 2rem;
+//
+//     .list-group-item {
+//         padding-top: .4rem;
+//         padding-bottom: .4rem;
+//         border: 0;
+//
+//         &:first-child {
+//             padding-top: 0;
+//         }
+//
+//         i {
+//             margin-right: $s-xs / 2;
+//             color: $c-list-group-item-icon;
+//
+//             &.fa-times {
+//                 color: $c-list-group-item-icon-cross; //#e22626
+//             }
+//         }
+//     }
+// }

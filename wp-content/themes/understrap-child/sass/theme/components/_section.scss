@@ -1,9 +1,45 @@
+// hide page title on home page
+.home {
+	.entry-header {
+		display: none;
+	}
+}
+
+
 .section {
     position: relative;
-    padding-top: $s-xl;
-    padding-bottom: $s-xl * 2;
+    padding-top: $s-lg;
+    padding-bottom: $s-xl;
 	z-index: 1;
+
+	&.fixed-bg {
+		padding-top: $s-xl;
+	    padding-bottom: $s-xl;
+	}
 }
+
+// section styled for first in the page, heading on the left side, content on the right
+.section-lead {
+	.row {
+		align-items: center;
+	}
+
+	.display-4 {
+		line-height: 1;
+		text-transform: uppercase;
+
+		@include media-breakpoint-up(md) {
+			font-size: $font-size-base * 3;
+			text-align: right;
+		}
+
+		@include media-breakpoint-up(lg) {
+			font-size: 3.5rem;
+		}
+	}
+}
+
+
 
 .section-newsletter,
 .section-whatever {
@@ -45,4 +81,8 @@
         opacity: .5;
 		z-index: -2;
     }
+}
+
+.section-services {
+	background-image: url('#{$path-to-uploads}uploads/2019/11/microphone-CANTUSE.jpg');
 }

@@ -21,6 +21,7 @@
 .navbar {
 	padding: $s-sm;
 	// background-color: $c-navbar-bg;
+	transition: all .33s ease-in-out;
 
 	// Shrink the header
 	&.shrink {
@@ -51,12 +52,19 @@
 .navbar-nav {
 	padding: 0 $s-sm;
 	transition: all .33s ease-in-out;
-	font-size: $font-size-base * .85;
 
 	.shrink & {
 		.nav-link {
 			color: $navbar-light-color-shrink;
 		}
+	}
+
+}
+
+// dropdown list on smaller resolutions
+.navbar-collapse {
+	@include media-breakpoint-down(md) {
+		background-color: $secondary;
 	}
 }
 
@@ -98,10 +106,18 @@
 	}
 }
 
-// hide page title on home page
-// .home {
-// 	.entry-header {
-// 		display: none;
+.navbar-toggler {
+	.shrink & {
+		border-color: $navbar-light-toggler-border-color-shrink;
+		background-color: $primary;
+	}
+}
+
+
+//
+// .navbar-collapse {
+// 	&.bg-dark {
+// 		background-color: transparent;
 // 	}
 // }
 
