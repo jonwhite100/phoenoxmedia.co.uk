@@ -3,7 +3,6 @@
 // So be careful when updating the plugin! Added card and card-blog-post to the $class array ('listing-item')
 // added card-img-top to image class.
 ///
-
 .section-jobs {
 	.col-md-6 {
 		margin-bottom: $s-lg;
@@ -42,10 +41,10 @@
     }
 
     .card-text {
+		min-height: $s-xl * 7.5;
         padding-right: $s-md;
         padding-bottom: $s-md;
         padding-left: $s-md;
-		min-height: $s-xl * 7.5;
 		font-size: $font-size-base * .9;
         line-height: $font-size-base * 1.8;
 
@@ -54,7 +53,7 @@
 		}
 
 		@include media-breakpoint-up(xl) {
-			min-height: $s-xl * 6.5;
+			min-height: $s-xl * 4;
 		}
     }
 

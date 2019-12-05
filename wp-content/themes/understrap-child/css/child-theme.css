@@ -9348,10 +9348,10 @@ a.skip-link {
   display: none; }
 
 .listing-item .card-text {
+  min-height: 45rem;
   padding-right: 2rem;
   padding-bottom: 2rem;
   padding-left: 2rem;
-  min-height: 45rem;
   font-size: 0.9rem;
   line-height: 1.8rem; }
   @media (min-width: 992px) {
@@ -9359,7 +9359,7 @@ a.skip-link {
       min-height: 51rem; } }
   @media (min-width: 1200px) {
     .listing-item .card-text {
-      min-height: 39rem; } }
+      min-height: 24rem; } }
 
 .listing-item .btn,
 .listing-item .wpcf7 input[type=submit], .wpcf7 .listing-item input[type=submit] {
@@ -9832,7 +9832,7 @@ label {
 .section {
   position: relative;
   padding-top: 6rem;
-  padding-bottom: 12rem;
+  padding-bottom: 6rem;
   z-index: 1; }
 
 .section-newsletter h2,

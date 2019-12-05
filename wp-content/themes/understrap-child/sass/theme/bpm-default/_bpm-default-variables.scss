@@ -6,8 +6,60 @@ $black: #000 !default;
 $grey: #767676;
 $grey-light: #9e9e9e !default;
 $grey-lightest: #edf5ff;
-
 $brand-danger: #e22626 !default;
+
+// Box shadows
+$box-shadow: 0 0 6px darken($white, 25%) !default;
+
+// Buttons
+$border-radius-lg: 3rem !default;
+
+// Card
+$card-spacer-y: .5rem !default; // 8px
+
+// Fonts
+$font-size-base: 1rem !default;
+$h1-font-size: $font-size-base * 2.25 !default;
+$h2-font-size: $font-size-base * 1.75 !default;
+$h3-font-size: $font-size-base * 1.5 !default;
+$h4-font-size: $font-size-base * 1.1 !default;
+$h5-font-size: $font-size-base * 1.1 !default;
+$h6-font-size: $font-size-base !default;
+
+// Font Awesome
+$c-fa-no-bg: $primary !default;
+$c-fa-stack-border: rgba($secondary, .75) !default;
+$c-fa-stack-icon-outer: $primary !default;
+$c-fa-stack-icon-inner: $white !default;
+$c-fa-stack-icon-outer-inverted: $white !default;
+$c-fa-stack-icon-inner-inverted: $primary !default;
+
+// Font Awesome - default stack width and height is 2em
+$s-fa-stack-border: 2rem;
+$s-fa-stack-sm-icon: 1.75rem !default;
+$s-fa-stack-sm-icon-inner: .85rem !default;
+$s-fa-stack-lg-icon: 2.5rem !default;
+$s-fa-stack-lg-icon-inner: 1.25rem !default;
+
+// Jumbotron
+$jumbotron-padding: 0 !default;
+
+// List group
+$c-list-group-item-icon: $secondary !default;
+$c-list-group-item-icon-cross: $brand-danger !default;
+
+// Navbar
+$c-navbar-bg: $white;
+$c-navbar-border: darken($white, 50%);
+$c-navbar-box-shadow: rgba(122, 120, 122, .99) !default;
+$c-navbar-bg-shrink: rgba(250, 250, 250, 1) !default;
+
+// Paths
+$path-to-uploads: '../../../' !default;
+$path-to-fonts: '../fonts' !default;
+
+// Posts
+$c-single-post-bg: darken($white, 2%) !default;
 
 // Social media colours
 $c-twitter: #00b6f1 !default;
@@ -16,19 +68,6 @@ $c-facebook: #3b5998;
 $c-g-plus: #df4a32;
 $c-vimeo: #1ab7ea;
 $c-instagram: #cd486b;
-
-// Path to wp-content/uploads to use images in css
-$path-to-uploads: '../../../' !default;
-
-// Fonts
-$font-size-base: 1rem !default;
-
-$h1-font-size: $font-size-base * 2.25 !default;
-$h2-font-size: $font-size-base * 1.75 !default;
-$h3-font-size: $font-size-base * 1.5 !default;
-$h4-font-size: $font-size-base * 1.1 !default;
-$h5-font-size: $font-size-base * 1.1 !default;
-$h6-font-size: $font-size-base !default;
 
 // Spacers
 $spacer: 1rem; // 16px;
@@ -39,44 +78,3 @@ $s-xxs: $s-xs / 2;
 $s-md: $s-sm * 2;
 $s-lg: $s-md * 2;
 $s-xl: $s-lg + $s-md;
-
-// Buttons
-$border-radius-lg: 3rem !default;
-
-// Font Awesome
-$c-fa-no-bg: $primary !default;
-
-$c-fa-stack-border: rgba($secondary, .75) !default;
-$c-fa-stack-icon-outer: $primary !default;
-$c-fa-stack-icon-inner: $white !default;
-$c-fa-stack-icon-outer-inverted: $white !default;
-$c-fa-stack-icon-inner-inverted: $primary !default;
-
-// Default stack width and height is 2em
-$s-fa-stack-border: 2rem;
-$s-fa-stack-sm-icon: 1.75rem !default;
-$s-fa-stack-sm-icon-inner: .85rem !default;
-$s-fa-stack-lg-icon: 2.5rem !default;
-$s-fa-stack-lg-icon-inner: 1.25rem !default;
-
-// Jumbotron
-$jumbotron-padding: 0 !default;
-
-// Navbar
-$c-navbar-bg: $white;
-$c-navbar-border: darken($white, 50%);
-$c-navbar-box-shadow: rgba(122, 120, 122, .99) !default;
-$c-navbar-bg-shrink: rgba(250, 250, 250, 1) !default;
-
-// Box shadows
-$box-shadow: 0 0 6px darken($white, 25%) !default;
-
-// Card
-$card-spacer-y: .5rem !default; // 8px
-
-// List group
-$c-list-group-item-icon: $secondary !default;
-$c-list-group-item-icon-cross: $brand-danger !default;
-
-// Posts
-$c-single-post-bg: darken($white, 2%) !default;
