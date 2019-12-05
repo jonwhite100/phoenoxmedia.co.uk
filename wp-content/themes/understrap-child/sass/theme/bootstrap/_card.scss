@@ -6,23 +6,6 @@
 //      card-deck: used in the about us, home page section (right side cards)
 //      card-pricing: home page, pricing section
 
-.card-img-overlay {
-	.section-services & {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-end;
-	}
-}
-
-.card-title {
-	.section-services & {
-		display: flex;
-		align-self: flex-end;
-		padding: $s-xxs;
-		background-color: $black;
-		font-size: $font-size-base * 1.25;
-	}
-}
 
 
 //

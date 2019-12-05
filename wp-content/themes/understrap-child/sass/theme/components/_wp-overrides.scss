@@ -2,7 +2,17 @@
 // Override WordPress styling
 ///
 
-// HOw images are displayed in articles
+// Take out the wrapper padding
+.wrapper {
+	padding: 0;
+
+	&-footer-widgets {
+		padding-top: $s-md + $s-sm;
+		padding-bottom: $s-md + $s-sm;
+	}
+}
+
+// How images are displayed in articles
 .wp-block-image {
 	figcaption {
 		text-align: left;

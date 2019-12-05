@@ -1,0 +1,134 @@
+///
+// Font awesome
+///
+
+/// Variations - when item witin li with text to the right (e.g. address)
+.fa-in-list {
+	margin-right: $s-xs;
+	color: $c-fa-no-bg;
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+/// 1. fa-stack-border is a bordered circle with an icon in it
+.fa-stack {
+	.fa-stack-1x { // inner
+		color: $c-fa-stack-icon-inner;
+	}
+
+	.fa-stack-2x { // outer
+		color: $c-fa-stack-icon-outer;
+
+		.social & {
+			color: transparent;
+		}
+	}
+
+	&-border {
+		display: flex;
+		align-items: center;
+		width: $s-fa-stack-border;
+		height: $s-fa-stack-border;
+		border-radius: 50%;
+		background-color: $c-fa-stack-border;
+		line-height: $s-fa-stack-border;
+
+		.fa-stack-1x { // inner
+			font-size: $s-fa-stack-sm-icon-inner;
+		}
+
+		.fa-stack-2x { // outer
+			font-size: $s-fa-stack-sm-icon;
+		}
+	}
+
+	&-inverted {
+		.fa-stack-1x { // inner
+			color: $c-fa-stack-icon-inner-inverted;
+		}
+
+		.fa-stack-2x { // outer
+			color: $c-fa-stack-icon-outer-inverted;
+		}
+	}
+
+	&-lg {
+		width: $s-fa-stack-lg-icon;
+		height: $s-fa-stack-lg-icon;
+		line-height: $s-fa-stack-lg-icon;
+
+		.fa-stack-1x { // inner
+			font-size: $s-fa-stack-lg-icon-inner;
+		}
+
+		.fa-stack-2x { // outer
+			font-size: $s-fa-stack-lg-icon;
+		}
+	}
+}
+
+///
+//  Flaticon icon font: Flaticon
+//  Creation date: 08/09/2018 00:19
+///
+@font-face {
+	font-family: 'Flaticon';
+	font-style: normal;
+	font-weight: normal;
+    src: url('../fonts/Flaticon.eot'),
+		url('../fonts/Flaticon.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Flaticon.woff') format('woff'),
+         url('../fonts/Flaticon.ttf') format('truetype'),
+         url('../fonts/Flaticon.svg#Flaticon') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @font-face {
+    	font-family: 'Flaticon';
+		src: url('./Flaticon.svg#Flaticon') format('svg');
+    }
+}
+
+[class^='flaticon-'],
+[class*=' flaticon-'],
+[class^='flaticon-'],
+[class*=' flaticon-'] {
+	&:before,
+	&:after {
+		font-family: Flaticon;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: normal;
+		line-height: 1;
+		text-transform: none;
+		speak: none;
+
+		// Better Font Rendering
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+}
+
+.flaticon-move {
+	&:before {
+		content: '\f100';
+	}
+}
+.flaticon-scroll:before { content: '\f101'; }
+.flaticon-customer-support:before { content: '\f102'; }
+.flaticon-feature:before { content: '\f103'; }
+.flaticon-intersect:before { content: '\f104'; }
+.flaticon-union:before { content: '\f105'; }
+.flaticon-intersection:before { content: '\f106'; }
+.flaticon-rgb:before { content: '\f107'; }
+.flaticon-rgb-1:before { content: '\f108'; }
+.flaticon-resolution:before { content: '\f109'; }
+.flaticon-showcase:before { content: '\f10a'; }
+.flaticon-tickets:before { content: '\f10b'; }
+.flaticon-ticket:before { content: '\f10c'; }
+.flaticon-conversation:before { content: '\f10d'; }
+.flaticon-speech-bubble:before { content: '\f10e'; }
+.flaticon-email:before { content: '\f10f'; }
+.flaticon-contact:before { content: '\f110'; }
+.flaticon-file:before { content: '\f111'; }
+.flaticon-upload-information:before { content: '\f112'; }

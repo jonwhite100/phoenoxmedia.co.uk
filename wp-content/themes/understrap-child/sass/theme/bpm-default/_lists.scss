@@ -1,0 +1,26 @@
+// Style of list which has an icon (default aligned to left, text to the right)
+// Example is the footer addresss
+.list-icon {
+	li {
+		display: flex;
+		align-items: flex-start;
+		margin-bottom: $s-xs;
+	}
+}
+
+.list-icon-text {
+	padding-left: $s-sm;
+
+	h5 {
+		margin-bottom: 0;
+		font-size: $h5-font-size * .7;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+}
+
+.list-3-col {
+	@include media-breakpoint-up(md) {
+		column-count: 3;
+	}
+}

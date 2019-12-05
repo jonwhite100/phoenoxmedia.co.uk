@@ -1,0 +1,73 @@
+
+.social {
+	display: flex;
+
+	a {
+		display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin: 0 2px;
+		border-radius: 50%;
+        color: $white;
+		line-height: 40px;
+		text-align: center;
+    }
+
+    .twitter {
+		a {
+	        background-color: $c-twitter;
+	    }
+	}
+
+    .pinterest {
+		a {
+			background-color: $c-pinterest;
+		}
+	}
+
+	.facebook {
+		a {
+	        background-color: $c-facebook;
+	    }
+	}
+
+	.g-plus {
+		a {
+	        background-color: $c-g-plus;
+	    }
+	}
+
+	.vimeo {
+		a {
+	        background-color: $c-vimeo;
+	    }
+	}
+
+	.instagram {
+		a {
+	        background-color: $c-instagram;
+	    }
+	}
+}
+
+.contact-us-area {
+    .social {
+        margin-bottom: $s-lg;
+        padding-left: 0;
+
+        li {
+            display: inline-flex;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: $white;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+//
+// Override BS4
+//
+.btn {
+	// @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius-lg);
+	// border-radius: $btn-border-radius-lg;
+
+    .card-pricing & {
+		padding: $s-sm $s-md;
+		font-size: $font-size-base * .75;
+        font-weight: bold;
+		text-transform: uppercase;
+    }
+
+	&.wpcf7-form-control {
+		color: $white;
+		background-color: $primary;
+
+		&:hover {
+			color: $white;
+			background-color: lighten($primary, 10%);
+		}
+	}
+}
+
+///
+// Pulsing button
+///
+@keyframes pulse {
+	to {
+		box-shadow: 0 0 0 1.5rem $c-btn-pulse;
+	}
+}
+
+.btn-pulse {
+    box-shadow: 0 0 0 0 $secondary;
+    animation: pulse 2s infinite cubic-bezier(.66, 0, 0, 1);
+
+    &::hover {
+        animation: none;
+    }
+}

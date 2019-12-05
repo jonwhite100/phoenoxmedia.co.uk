@@ -1,0 +1,82 @@
+///
+// Override WordPress and Understrap styling
+///
+
+// Leave space at the top of the page for the fixed navbar.
+.site {
+    margin-top: $s-lg + $s-md;
+
+	@include media-breakpoint-up(md) {
+		margin-top: $s-xl;
+	}
+
+	@include media-breakpoint-up(lg) {
+		margin-top: $s-xl;
+	}
+}
+
+// hide page title on home page
+.home {
+    .entry-header {
+        display: none;
+    }
+}
+
+
+// Take out the wrapper padding
+.wrapper {
+	padding: 0;
+
+	&-footer-widgets {
+		padding-top: $s-md + $s-sm;
+		padding-bottom: $s-md + $s-sm;
+	}
+}
+
+// How images are displayed in articles
+.wp-block-image {
+	figcaption {
+		text-align: left;
+	}
+}
+
+// Override recaptcha 3
+.grecaptcha-badge {
+	opacity: 0;
+}
+
+///
+// blog post. loop-templates/content-single.php
+///
+
+// Single-post class is applied to the body tag
+.single-post {
+    background-color: $c-single-post-bg;
+
+    header {
+        a {
+            color: $white;
+        }
+    }
+
+    .entry-header {
+        width: 100%;
+        padding-top: $s-lg;
+        padding-bottom: $s-lg;
+        background-color: $primary;
+    }
+
+    .entry-title,
+    .entry-meta {
+		color: $white;
+        text-align: center;
+    }
+
+    .card-body {
+        padding: $s-lg;
+    }
+
+    .wp-post-image {
+        border-bottom: 1px solid gray('200');
+    }
+}

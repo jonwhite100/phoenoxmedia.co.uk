@@ -1,0 +1,79 @@
+//
+// Override BS4
+//
+.jumbotron {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0;
+	overflow: hidden;
+}
+
+.jumbotron-bg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	min-height: $s-jumbotron-height / 2;
+	overflow: hidden;
+	z-index: 0;
+
+	img {
+		width: 100%;
+		min-height: 100%;
+		object-fit: cover;
+	}
+
+	@include media-breakpoint-up(md) {
+		min-height: $s-jumbotron-height / 1.5;
+	}
+
+	@include media-breakpoint-up(lg) {
+		min-height: $s-jumbotron-height;
+	}
+}
+
+.jumbotron-main {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin: auto;
+}
+
+.jumbotron-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.jumbotron-img {
+	display: flex;
+	flex-direction: column;
+
+	img {
+		max-width: 90%;
+		max-height: 90%;
+	}
+}
+
+/// 1. there is a weird gap at the bottom that shows the bg image. this fixes it but not ideal solution!
+.jumbotron-base {
+	width: 100%;
+	margin-bottom: -3px; // 1
+
+	&-curve {
+		display: block;
+		position: relative;
+		margin-bottom: 0;
+		padding-bottom: 0;
+
+		path,
+		polygon {
+			fill: $c-jumbotron-base-bg;
+		}
+	}
+}

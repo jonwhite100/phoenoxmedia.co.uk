@@ -11,126 +11,18 @@
 // 	}
 // }
 
-// Max size for the logo
-.img-fluid {
-	max-width: 5rem;
-	max-height: 5rem;
-	transition: all .33s ease-in-out;
-}
 
 .navbar {
-	padding: $s-sm;
+
 	// background-color: $c-navbar-bg;
-	transition: all .33s ease-in-out;
+
 
 	// Shrink the header
 	&.shrink {
-		top: 0;
-		// height: 92px;
-		padding: $s-xs $s-sm;
-		transition: all .33s ease-in-out;
-		background-color: $c-navbar-bg-shrink;
-		box-shadow: 0 3px 6px 0 $c-navbar-box-shadow;
 
-		.img-fluid {
-			max-width: 3rem;
-			max-height: 3rem;
-			transition: all .33s ease-in-out;
-		}
-
-		@include media-breakpoint-down(xs) {
-			height: 75px;
-		}
 	}
 
 	@include media-breakpoint-down(xs) {
 		height: 75px;
 	}
 }
-
-
-.navbar-nav {
-	padding: 0 $s-sm;
-	transition: all .33s ease-in-out;
-
-	.shrink & {
-		.nav-link {
-			color: $navbar-light-color-shrink;
-		}
-	}
-
-}
-
-// dropdown list on smaller resolutions
-.navbar-collapse {
-	@include media-breakpoint-down(md) {
-		background-color: $secondary;
-	}
-}
-
-// style the burger menu dropdown
-.navbar-brand {
-	transition: font-size .25s;
-    font-family: $bonappetit-font-family;
-    font-size: $h1-font-size * 2;
-    font-weight: bold;
-    line-height: 1;
-
-    .shrink & {
-		transition: font-size .25s;
-        font-size: $h1-font-size * 1.5;
-
-		@include media-breakpoint-down(xs) {
-			font-size: $h1-font-size * 1.25;
-		}
-    }
-
-    &-sub {
-        font-family: $font-family-sans-serif;
-        font-size: $font-size-base;
-        text-align: center;
-
-        .shrink & {
-			transition: font-size .25s;
-            font-size: $font-size-base * .75;
-        }
-
-		@include media-breakpoint-down(sm) {
-			display: none;
-		}
-    }
-
-	@include media-breakpoint-down(xs) {
-		transition: font-size .25s;
-		font-size: $h1-font-size * 1.25;
-	}
-}
-
-.navbar-toggler {
-	.shrink & {
-		border-color: $navbar-light-toggler-border-color-shrink;
-		background-color: $primary;
-	}
-}
-
-
-//
-// .navbar-collapse {
-// 	&.bg-dark {
-// 		background-color: transparent;
-// 	}
-// }
-
-//
-// #wpadminbar {
-// 	display: none;
-// }
-
-// .navbar-expand-md {
-//     .navbar-nav {
-//         .nav-link {
-//             padding-right: $s-sm;
-//             padding-left: $s-sm;
-//         }
-//     }
-// }

@@ -1,0 +1,12 @@
+// Max size for the logo
+.img-fluid {
+	max-width: 5rem;
+	max-height: 5rem;
+	transition: all .33s ease-in-out;
+
+	.shrink & {
+		max-width: 3rem;
+		max-height: 3rem;
+		transition: all .33s ease-in-out;
+	}
+}

@@ -1,0 +1,64 @@
+//
+// Override BS4
+//
+
+// list-group-about is non BS4 class
+.list-group-about,
+.list-group-blog-site {
+    .list-group-item {
+		display: flex;
+		align-items: center;
+        margin-bottom: $s-xs;
+        padding: 0;
+		border: 0;
+        color: gray('900');
+        font-weight: 400;
+        text-transform: capitalize;
+
+		.list-group-item-text {
+			margin-left: $s-xs;
+		}
+    }
+	// 
+	// .icon-background {
+	// 	color: $primary;
+	// }
+}
+
+.list-group-blog-site {
+    .list-group-item {
+		border: 0;
+		font-size: $fa-font-size-base * 1;
+        text-transform: none;
+    }
+
+	i {
+		padding-right: $s-xs;
+		color: $primary;
+		font-size: $fa-font-size-base * 1.5;
+    }
+}
+
+// list-group-pricing is non BS4 class
+.list-group-pricing {
+    margin-bottom: 2rem;
+
+    .list-group-item {
+        padding-top: .4rem;
+        padding-bottom: .4rem;
+        border: 0;
+
+        &:first-child {
+            padding-top: 0;
+        }
+
+        i {
+            margin-right: $s-xs / 2;
+            color: $c-list-group-item-icon;
+
+            &.fa-times {
+                color: $c-list-group-item-icon-cross; //#e22626
+            }
+        }
+    }
+}

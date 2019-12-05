@@ -1,0 +1,22 @@
+// fonts / text
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: $headings-text-transform;
+}
+
+p {
+    font-size: $font-size-sm;
+    line-height: 1.8;
+}
+
+.section-heading {
+	display: inline-block;
+	position: relative;
+    margin-bottom: $s-xl;
+    padding-bottom: 20px;
+	font-weight: 700;
+}

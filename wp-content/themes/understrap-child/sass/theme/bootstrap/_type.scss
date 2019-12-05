@@ -1,21 +1,3 @@
-@font-face {
-    font-family: 'kunstler_scriptregular';
-	font-style: normal;
-	font-weight: normal;
-    src: url('#{$understrap-font-path}/kunstler-webfont.eot'),
-		url('#{$understrap-font-path}/kunstler-webfont.eot?#iefix') format('embedded-opentype'),
-         url('#{$understrap-font-path}/kunstler-webfont.woff') format('woff'),
-         url('#{$understrap-font-path}/kunstler-webfont.ttf') format('truetype'),
-         url('#{$understrap-font-path}/kunstler-webfont.svg#kunstler_scriptregular') format('svg');
-
-}
-
-.text-center {
-    text-align: center;
-}
-
-
-
 p,
 li {
     font-size: $font-size-sm;

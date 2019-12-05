@@ -1,0 +1,114 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
+// Just copy a variable from /sass/bootstrap/_variables.scss, paste it here and edit the value.
+// As example you find one of the most important Bootstrap variable below: $brand-primary.
+// Thats the ugly Bootstrap blue used for all the links, primary buttons etc.
+// Just add your color code here, compile the theme.scss file to change this color everywhere
+
+// Buttons
+$c-btn-pulse: rgba($secondary, 0) !default;
+
+// Fixed background
+$path-to-fixed-bg-newsletter: 'uploads/2019/09/bigplane-test-image.jpg' !default;
+$c-fixed-bg-overlay: $black !default;
+
+// Fonts
+$font-family-sans-serif: 'Roboto', sans-serif !default;
+$headings-font-family: 'Open Sans Condensed', sans-serif !default;
+$headings-font-weight: 400 !default;
+$headings-text-transform: 'none' !default;
+
+// Footer widgets
+$c-wrapper-footer-widgets: $white !default;
+$c-wrapper-footer-widgets-bg: $primary !default;
+$c-wrapper-footer-widgets-link: $white !default;
+
+// Footer copyright info
+$c-wrapper-footer: $white !default;
+$c-wrapper-footer-bg: $black !default;
+
+$c-footer-menu-link: $white !default;
+
+// Jumbotron
+$c-jumbotron-h1: $white !default;
+$c-jumbotron-h2: $primary !default;
+$c-jumbotron-h2-bg: transparent !default;
+$c-jumbotron-base-bg: $white !default;
+$s-jumbotron-height: $s-xl * 9 !default;
+$jumbotron-bg: lighten($secondary, 35%) !default;
+
+// Navbar
+$navbar-light-color:                $primary !default;
+$navbar-light-color-shrink:         $primary !default;
+$navbar-light-hover-color:          rgba($primary, .7) !default;
+$navbar-light-active-color:         rgba($primary, .7) !default;
+$navbar-light-disabled-color:       rgba($primary, .3) !default;
+$navbar-light-toggler-border-color: $white;
+$navbar-light-toggler-border-color-shrink: $primary;
+
+// $lead-font-size:              $font-size-base * 1.25 !default;
+//
+// // Font Awesome
+// $c-fa-no-bg: $primary !default;
+//
+// $c-fa-stack-border: rgba($secondary, .75) !default;
+// $c-fa-stack-icon-outer: $primary !default;
+// $c-fa-stack-icon-inner: $white !default;
+// $c-fa-stack-icon-outer-inverted: $white !default;
+// $c-fa-stack-icon-inner-inverted: $primary !default;
+//
+// // Default stack width and height is 2em
+// $s-fa-stack-border: 2.0rem;
+// $s-fa-stack-sm-icon: 1.75rem !default;
+// $s-fa-stack-sm-icon-inner: .85rem !default;
+// $s-fa-stack-lg-icon: 2.5rem !default;
+// $s-fa-stack-lg-icon-inner: 1.25rem !default;
+//
+// // path to wp-content/uploads to use images in css
+// $path-to-uploads: '../../../' !default;
+//
+// // buttons
+// $border-radius-lg: 3rem !default;
+// $c-btn-pulsing-box-shadow: rgba(232, 76, 61, 0) !default;
+//
+// // Spacers
+// $spacer: 1rem; // 16px;
+//
+// $s-sm: $spacer;
+// $s-xs: $s-sm / 2;
+// $s-xxs: $s-xs / 2;
+// $s-md: $s-sm * 2;
+// $s-lg: $s-md * 2;
+// $s-xl: $s-lg + $s-md;
+//
+// // carousel
+// $carousel-control-color: $primary !default;
+// $carousel-indicator-active-bg: $primary !default;
+//
+// // jumbotron
+// $jumbotron-bg: transparent !default;
+// $jumbotron-padding: 0 !default;
+// $c-jumbotron-h2-bg: rgba(0, 0, 0, .5) !default;
+// $c-jumbotron-base-bg: $white !default;
+// $s-jumbotron-height: $s-xl * 9 !default;
+//
+// // navbar
+// $c-navbar-bg: transparent;
+// $c-navbar-border: darken($white, 50%);
+// $c-navbar-box-shadow: rgba(122, 120, 122, .99) !default;
+// $c-navbar-bg-shrink: rgba(250, 250, 250, 1) !default;
+//
+//
+// // Shadows
+// $box-shadow: 0 0 6px darken($white, 25%) !default;
+//
+// // Card
+// $card-spacer-y: .5rem !default; // 8px
+// $card-border-radius: 0 !default;
+//
+// // List group
+// $c-list-group-item-icon: $secondary !default;
+// $c-list-group-item-icon-cross: $brand-danger !default;
+//
+// // Blog single post
+// $c-single-post-bg-color: darken($white, 2%) !default;

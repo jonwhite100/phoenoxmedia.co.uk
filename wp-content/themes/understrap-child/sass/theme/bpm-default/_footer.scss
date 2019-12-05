@@ -1,0 +1,50 @@
+// #wrapper-footer,
+// #wrapper-footer-full,
+// #wrapper-static-hero,
+.wrapper-footer-widgets {
+	background-color: $c-wrapper-footer-widgets-bg;
+    color: $c-wrapper-footer-widgets;
+    font-size: $font-size-base * .85;
+
+    a {
+	      color: $c-wrapper-footer-widgets-link;
+    }
+
+    h3 {
+  		margin-bottom: $s-md;
+  		font-size: $h4-font-size;
+    }
+
+    .menu {
+		padding-left: 0;
+		list-style: none;
+    }
+}
+
+#wrapper-footer {
+	background-color: $c-wrapper-footer-bg;
+}
+
+.site-info {
+	padding-top: $s-md;
+	padding-bottom: $s-md;
+	color: $white;
+	font-size: $font-size-base * .75;
+}
+
+/// 1 <ul> already has a 1rem margin bottom by default
+.footer-menu {
+	padding-top: 2rem;
+	padding-bottom: 1rem; // 1
+    text-align: right;
+
+    li {
+        display: inline-block;
+        margin-left: 1rem;
+		font-size: $font-size-base * .75;
+
+		a {
+			color: $c-footer-menu-link;
+		}
+    }
+}

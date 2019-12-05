@@ -18,27 +18,6 @@
 	}
 }
 
-// section styled for first in the page, heading on the left side, content on the right
-.section-lead {
-	.row {
-		align-items: center;
-	}
-
-	.display-4 {
-		line-height: 1;
-		text-transform: uppercase;
-
-		@include media-breakpoint-up(md) {
-			font-size: $font-size-base * 3;
-			text-align: right;
-		}
-
-		@include media-breakpoint-up(lg) {
-			font-size: 3.5rem;
-		}
-	}
-}
-
 
 
 .section-newsletter,
@@ -81,8 +60,4 @@
         opacity: .5;
 		z-index: -2;
     }
-}
-
-.section-services {
-	background-image: url('#{$path-to-uploads}uploads/2019/11/microphone-CANTUSE.jpg');
 }

@@ -1,22 +1,9 @@
 //
 // Override BS4
 //
-ul {
-	.section-facilities & {
-		padding-top: $s-sm;
-
-		li {
-			text-align: left;
-		}
-
-		i {
-			margin-right: $s-xxs;
-			color: $primary;
-		}
-
-		@include media-breakpoint-up(md) {
-			column-count: 3;
-		}
+.list-3-col {
+	@include media-breakpoint-up(md) {
+		column-count: 3;
 	}
 }
 

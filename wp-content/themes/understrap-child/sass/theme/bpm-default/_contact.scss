@@ -1,0 +1,17 @@
+.section-work-with-us {
+
+    li {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: $s-xs;
+        font-size: $font-size-base * .8;
+        line-height: 1.8;
+    }
+
+    .fas {
+        margin-right: $s-xs;
+        border-radius: 50%;
+        color: $primary;
+        font-size: $h4-font-size;
+    }
+}

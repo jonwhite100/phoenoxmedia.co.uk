@@ -1,0 +1,55 @@
+.section {
+	position: relative;
+    padding-top: $s-xl;
+    padding-bottom: $s-xl * 2;
+	z-index: 1;
+}
+
+.section-newsletter,
+.section-whatever {
+    h2,
+    p {
+        color: $white;
+    }
+}
+
+// optional 'scroll to' that can be put at the bottom of a section to go to an anchored link
+// TODO: check that if it's fa-stack or not
+.section-scroll-to {
+    display: flex;
+    margin-top: $s-lg;
+
+	.fa-stack {
+		display: flex;
+		align-items: center;
+
+		i {
+			color: $white;
+
+			&:first-child {
+				color: $primary;
+			}
+		}
+	}
+}
+
+// section styled for first in the page, heading on the left side, content on the right
+.section-lead {
+	.row {
+		align-items: center;
+	}
+
+	.display-4 {
+		line-height: 1;
+		// text-transform: uppercase;
+
+		@include media-breakpoint-up(md) {
+			font-size: $font-size-base * 3;
+			text-align: right;
+		}
+
+		@include media-breakpoint-up(lg) {
+			font-size: 3.5rem;
+		}
+	}
+}
