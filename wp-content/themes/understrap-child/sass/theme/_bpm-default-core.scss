@@ -3,8 +3,8 @@ $white: #fff !default;
 $black: #000 !default;
 
 // Site brand colours
-$secondary: #4a9bd3; //logo light blue. original theme #4ac4f3
-$primary: #126ab4; // logo darker blue
+$primary: #fe8b0c; // orange
+$secondary: #353431; // black
 
 
 // Font sizing
@@ -17,7 +17,7 @@ $h5-font-size: $font-size-base * 1.1 !default;
 $h6-font-size: $font-size-base !default;
 
 // Site fonts
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins&display=swap'); // sass-lint:disable-line no-url-domains no-url-protocols
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto&display=swap'); // sass-lint:disable-line no-url-domains no-url-protocols
 
 // Spacers
 $spacer: 1rem; // 16px;
