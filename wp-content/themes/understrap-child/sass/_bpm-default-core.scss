@@ -1,0 +1,30 @@
+// Defaults
+$white: #fff !default;
+$black: #000 !default;
+
+// Site brand colours
+$secondary: #4a9bd3; //logo light blue. original theme #4ac4f3
+$primary: #126ab4; // logo darker blue
+
+
+// Font sizing
+$font-size-base: 1rem !default;
+$h1-font-size: $font-size-base * 2.25 !default;
+$h2-font-size: $font-size-base * 1.75 !default;
+$h3-font-size: $font-size-base * 1.5 !default;
+$h4-font-size: $font-size-base * 1.1 !default;
+$h5-font-size: $font-size-base * 1.1 !default;
+$h6-font-size: $font-size-base !default;
+
+// Site fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins&display=swap'); // sass-lint:disable-line no-url-domains no-url-protocols
+
+// Spacers
+$spacer: 1rem; // 16px;
+
+$s-sm: $spacer;
+$s-xs: $s-sm / 2;
+$s-xxs: $s-xs / 2;
+$s-md: $s-sm * 2;
+$s-lg: $s-md * 2;
+$s-xl: $s-lg + $s-md;

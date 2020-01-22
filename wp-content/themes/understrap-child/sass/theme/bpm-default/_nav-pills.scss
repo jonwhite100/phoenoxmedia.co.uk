@@ -1,0 +1,26 @@
+.nav-pills {
+	.nav-item {
+		.nav-link {
+			margin-right: $s-xs;
+			margin-bottom: $s-xs;
+			margin-left: $s-xs;
+			padding-top: $s-xs;
+			padding-right: $s-md;
+			padding-bottom: $s-xs;
+			padding-left: $s-md;
+			border-radius: $s-md;
+			background-color: $c-nav-pills-link-bg;
+			color: $c-nav-pills-link;
+			font-size: $font-size-base * .85;
+			font-weight: 700;
+			text-transform: uppercase;
+			cursor: pointer;
+
+			&.active {
+				background-color: $c-nav-pills-link-bg-active;
+				color: $c-nav-pills-link-active;
+
+			}
+		}
+	}
+}

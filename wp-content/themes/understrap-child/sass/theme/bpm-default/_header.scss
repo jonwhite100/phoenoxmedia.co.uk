@@ -41,6 +41,7 @@
     }
 }
 
+
 ///
 // Below is from phoenOx
 ///
@@ -60,7 +61,7 @@
 // dropdown list on smaller resolutions
 .navbar-collapse {
 	@include media-breakpoint-down(md) {
-		background-color: $secondary;
+		background-color: $c-navbar-collapse-bg;
 	}
 }
 

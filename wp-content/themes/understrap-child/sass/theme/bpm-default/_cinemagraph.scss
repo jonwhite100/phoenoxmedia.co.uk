@@ -1,0 +1,49 @@
+$c-cinemagraph-gradient-1: $white !default;
+$c-cinemagraph-gradient-2: gray('200') !default;
+
+// 1 hide the 'play' icon on ios
+.cinemagraph {
+    position: relative;
+    min-height: 27rem;
+    margin-bottom: 0;
+    background-color: $c-cinemagraph-gradient-2;
+
+	// 1
+	*::-webkit-media-controls-start-playback-button { // sass-lint:disable-line no-vendor-prefixes
+        display: none;
+        -webkit-appearance: none; // sass-lint:disable-line no-vendor-prefixes
+    }
+}
+
+.cinemagraph-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: $c-cinemagraph-gradient-2;
+    overflow: hidden;
+	z-index: 4;
+
+    // un-comment this if an overloay on the video is required
+    &:after {
+		position: absolute;
+		top: 0;
+		left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient($c-cinemagraph-gradient-1, $c-cinemagraph-gradient-2);
+		content: '';
+		opacity: .25;
+    }
+}
+
+.cinemagraph-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+	max-width: 100%;
+    // min-height: 100%;
+    transform: translate(-50%, -50%);
+}

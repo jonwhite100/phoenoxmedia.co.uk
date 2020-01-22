@@ -1,4 +1,4 @@
-console.log('Put custom JS in this file: understrap-child/src/js/custom-javascript.js!');
+// console.log('Put custom JS in this file: understrap-child/src/js/custom-javascript.js!');
 
 // preloader JavaScript
 // Wait for window load

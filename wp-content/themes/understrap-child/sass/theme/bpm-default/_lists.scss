@@ -19,8 +19,33 @@
 	}
 }
 
-.list-3-col {
+// multi columns
+.list-col-2 {
+	@include media-breakpoint-up(md) {
+		column-count: 2;
+	}
+}
+
+.list-col-3 {
 	@include media-breakpoint-up(md) {
 		column-count: 3;
+	}
+}
+
+.list-col-4 {
+	@include media-breakpoint-up(md) {
+		column-count: 4;
+	}
+}
+
+// apply list group styling to multi column list
+[class*='list-col-'],
+[class^='list-col-'] {
+	&.list-border-b {
+		li {
+			padding: $s-xs;
+			border-bottom: 1px solid gray('300');
+			break-inside: avoid;
+		}
 	}
 }

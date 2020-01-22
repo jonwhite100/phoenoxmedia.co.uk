@@ -1,0 +1,18 @@
+{
+    "extends": "airbnb",
+
+    "env": {
+        "es6": false,
+        "browser": true,
+        "jquery": true,
+    },
+
+    'rules': {
+        'indent': [1, 'tab', { SwitchCase: 1, VariableDeclarator: 1 }],
+        'no-tabs': 0,
+        'linebreak-style': 0,
+        'prefer-arrow-callback': 0,
+        'func-names': 0,
+        'no-var': 0,
+    }
+}
