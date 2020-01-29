@@ -13,7 +13,7 @@
 
 // Optional files - If you don´t use the corresponding scripts/fonts comment em out
 // @import '../src/sass/understrap/theme/contact-form7';
-@import 'assets/animate'; // <------- SCSS version of animate.css
+@import 'vendor/animate.css/animate'; // <------- SCSS version of animate.css from https://github.com/tgdev/animate-sass
 @import 'assets/font-awesome'; // <------- Font Awesome Icon font
 @import 'assets/underscores'; // <------- Underscores media styles
 

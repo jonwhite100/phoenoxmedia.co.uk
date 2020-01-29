@@ -1,8 +1,12 @@
 <?php
 /**
-
- * Template Name: PageContact
- * The template for displaying the contact page (so we only load recaptcha on this page)
+ * Template Name: Page With Contact Form
+ * The template for any page that contains the contact form (so we can hide recaptcha 3 on all the others)
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site will use a
+ * different template.
  *
  * @package understrap
  */

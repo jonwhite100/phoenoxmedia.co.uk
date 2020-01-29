@@ -6595,30 +6595,6 @@ a.skip-link {
 .navbar h1 {
   font-weight: 400; }
 
-/*
-* Use existing Bootstrap 4 classes and
-* variables to extend - override CF7 style
-*
-* Useful CF7 classes:
-* .wpcf7 the wrapper element
-* .wpcf7-form
-* .wpcf7-form-control
-* .wpcf7-text
-* .wpcf7-email
-* .wpcf7-textarea
-* .wpcf7-submit
-*/
-.wpcf7 {
-  max-width: 600px;
-  margin: 0 auto !important; }
-  .wpcf7 .wpcf7-form label {
-    width: 100%; }
-  .wpcf7 .wpcf7-not-valid-tip {
-    color: #dc3545; }
-  .wpcf7 .wpcf7-validation-errors {
-    color: #dc3545;
-    border: 1px solid #e9ecef; }
-
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0; }
@@ -9189,16 +9165,6 @@ a.skip-link {
     -webkit-animation: none;
             animation: none; }
 
-.section-newsletter input {
-  border-radius: 0.25rem;
-  color: #495057;
-  line-height: 1.5; }
-
-.section-newsletter .cmApp_signupContainer {
-  padding-top: 0; }
-  .section-newsletter .cmApp_signupContainer label {
-    color: #fff; }
-
 .card-deck .card {
   margin-bottom: 2rem; }
 
@@ -9287,8 +9253,17 @@ a.skip-link {
   padding-bottom: .75rem;
   padding-left: 2rem; }
 
+.jumbotron-carousel .carousel {
+  width: 100%;
+  height: 54rem; }
+
 .section-testimonials .carousel-inner {
   min-height: 10rem; }
+
+.jumbotron-carousel .carousel-item {
+  position: relative;
+  width: 100%;
+  height: 54rem; }
 
 .section-testimonials .carousel-item {
   text-align: center; }
@@ -9305,6 +9280,89 @@ a.skip-link {
 .section-testimonials .carousel-indicators {
   bottom: -30px;
   margin-bottom: 0; }
+
+.jumbotron-carousel .carousel-caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%; }
+  .jumbotron-carousel .carousel-caption .animated.bounce {
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s; }
+  .jumbotron-carousel .carousel-caption a {
+    color: #fff; }
+
+.cinemagraph {
+  position: relative;
+  min-height: 27rem;
+  margin-bottom: 0;
+  background-color: #e9ecef; }
+  .cinemagraph *::-webkit-media-controls-start-playback-button {
+    display: none;
+    -webkit-appearance: none; }
+
+.cinemagraph-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #e9ecef;
+  overflow: hidden;
+  z-index: 4; }
+  .cinemagraph-container:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e9ecef));
+    background: linear-gradient(#fff, #e9ecef);
+    content: '';
+    opacity: .25; }
+
+.cinemagraph-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  max-width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+/*
+* Use existing Bootstrap 4 classes and
+* variables to extend - override CF7 style
+*
+* Useful CF7 classes:
+* .wpcf7 the wrapper element
+* .wpcf7-form
+* .wpcf7-form-control
+* .wpcf7-text
+* .wpcf7-email
+* .wpcf7-textarea
+* .wpcf7-submit
+*/
+.wpcf7 {
+  max-width: 600px;
+  margin: 0 auto !important; }
+  .wpcf7 .wpcf7-form label {
+    width: 100%; }
+  .wpcf7 .wpcf7-not-valid-tip {
+    color: #dc3545; }
+  .wpcf7 .wpcf7-validation-errors {
+    color: #dc3545;
+    border: 1px solid #e9ecef; }
 
 .section-work-with-us li {
   display: -webkit-box;
@@ -9455,7 +9513,7 @@ label {
 
 @media (max-width: 991.98px) {
   .navbar-collapse {
-    background-color: #353431; } }
+    background-color: #fff; } }
 
 .navbar-brand {
   -webkit-transition: font-size .25s;
@@ -9541,7 +9599,7 @@ label {
   font-family: 'Flaticon';
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/Flaticon.eot"), url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/Flaticon.woff") format("woff"), url("../fonts/Flaticon.ttf") format("truetype"), url("../fonts/Flaticon.svg#Flaticon") format("svg"); }
+  src: url("../fonts/Flaticon.eot"), url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"), url("webfont.woff2") format("woff2"), url("../fonts/Flaticon.woff") format("woff"), url("../fonts/Flaticon.ttf") format("truetype"), url("../fonts/Flaticon.svg#Flaticon") format("svg"); }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   @font-face {
@@ -9639,6 +9697,13 @@ label {
           justify-content: center;
   border-radius: 0;
   overflow: hidden; }
+  .jumbotron-carousel .img-to-parent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover; }
 
 .jumbotron-bg {
   position: absolute;
@@ -9677,6 +9742,8 @@ label {
           justify-content: center;
   width: 100%;
   margin: auto; }
+  .jumbotron-carousel .jumbotron-main {
+    margin-bottom: 0; }
 
 .jumbotron-text {
   display: -webkit-box;
@@ -9729,10 +9796,30 @@ label {
     text-transform: uppercase; }
 
 @media (min-width: 768px) {
-  .list-3-col {
+  .list-col-2 {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2; } }
+
+@media (min-width: 768px) {
+  .list-col-3 {
     -webkit-column-count: 3;
        -moz-column-count: 3;
             column-count: 3; } }
+
+@media (min-width: 768px) {
+  .list-col-4 {
+    -webkit-column-count: 4;
+       -moz-column-count: 4;
+            column-count: 4; } }
+
+[class*='list-col-'].list-border-b li,
+[class^='list-col-'].list-border-b li {
+  padding: 0.5rem;
+  border-bottom: 1px solid #dee2e6;
+  -webkit-column-break-inside: avoid;
+     -moz-column-break-inside: avoid;
+          break-inside: avoid; }
 
 .list-group-about .list-group-item,
 .list-group-blog-site .list-group-item {
@@ -9800,6 +9887,25 @@ label {
 .carousel-multi-item .carousel-item-left .active {
   -webkit-transform: translateX(-25%);
           transform: translateX(-25%); }
+
+.nav-pills .nav-item .nav-link {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  padding-top: 0.5rem;
+  padding-right: 2rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  border-radius: 2rem;
+  background-color: #edf5ff;
+  color: gray("900");
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer; }
+  .nav-pills .nav-item .nav-link.active {
+    background-color: #fe8b0c;
+    color: #fff; }
 
 .no-js #loader {
   display: none; }
@@ -10001,15 +10107,19 @@ p {
   font-size: 1.25rem; }
 
 .img-fluid {
-  max-width: 5rem;
+  max-width: 10rem;
   max-height: 5rem;
   -webkit-transition: all .33s ease-in-out;
   transition: all .33s ease-in-out; }
   .shrink .img-fluid {
-    max-width: 3rem;
+    max-width: 6rem;
     max-height: 3rem;
     -webkit-transition: all .33s ease-in-out;
     transition: all .33s ease-in-out; }
+
+.navbar-nav {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.25rem; }
 
 .jumbotron {
   min-height: 54rem; }

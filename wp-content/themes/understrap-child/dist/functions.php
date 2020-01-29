@@ -22,6 +22,7 @@ function theme_enqueue_styles() {
     wp_enqueue_style( 'child-understrap-styles', get_stylesheet_directory_uri() . '/css/child-theme.min.css', array(), $the_theme->get( 'Version' ) );
     wp_enqueue_script( 'jquery');
 	wp_enqueue_script( 'popper-scripts', get_template_directory_uri() . '/js/popper.min.js', array(), false);
+	wp_enqueue_script( 'popper-scripts', get_stylesheet_directory_uri() . '/js/popper.min.js', array(), false);
     wp_enqueue_script( 'child-understrap-scripts', get_stylesheet_directory_uri() . '/js/child-theme.min.js', array(), $the_theme->get( 'Version' ), true );
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
@@ -125,21 +126,30 @@ function register_additional_childtheme_sidebars() {
 
 add_action( 'init', 'register_additional_childtheme_sidebars' );
 
-///
-// Speeding the site up: enqueue Recaptcha 3 until it's needed with CF7
-///
-// Remove wpcf7 script
-add_filter( 'wpcf7_load_js', '__return_false' );
 
-// Take recaptcha out and load only on the contact template
-function hold_recaptcha_load() {
-    wp_dequeue_script( 'google-recaptcha' );
+///
+// Speeding the site up: Contact Form 7 and Recaptcha3
+///
 
-    if ( is_page_template( 'page-contact.php' ) ) {
-        if ( function_exists( 'wpcf7_enqueue_scripts' ) ) {
-            wpcf7_enqueue_scripts();
-            wp_enqueue_script( 'google-recaptcha' );
-        }
-    }
+// 1. Deregister Contact Form 7 JavaScript files on all pages without a form
+add_action( 'wp_print_scripts', 'aa_deregister_javascript', 100 );
+function aa_deregister_javascript() {
+	if ( ! is_page( array('ID', 'home-page', 'contact-bon-appetit') ) ) {
+		wp_deregister_script( 'contact-form-7' );
+	}
 }
-add_action( 'wp_enqueue_scripts', 'hold_recaptcha_load' );
+
+// 2. Remove Contact Form 7's reCAPTCHA files on all pages without a form
+add_action( 'wp_enqueue_scripts', 'aa_remove_recaptcha', 9 );
+function aa_remove_recaptcha() {
+	if ( ! is_page( array('ID', 'home-page', 'contact-bon-appetit') ) ) { // EDIT these!
+	// if ( ! is_page_template( 'page-templates/page-contact-form.php' ) ) {
+		remove_action( 'wp_enqueue_scripts', 'wpcf7_recaptcha_enqueue_scripts' );
+	}
+}
+
+// 3. Remove Contact Form 7 styling
+add_action( 'wp_print_styles', 'wps_deregister_styles', 100 );
+function wps_deregister_styles() {
+    wp_deregister_style( 'contact-form-7' );
+}
