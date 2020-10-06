@@ -1,0 +1,10 @@
+Local to live
+--------------
+
+Check the wp_!
+
+UPDATE wpqw_options SET option_value = replace(option_value, 'http://localhost/phoenoxmedia.co.uk', 'https://phoenoxmedia.co.uk') WHERE option_name = 'home' OR option_name = 'siteurl';
+  
+UPDATE wpqw_posts SET post_content = replace(post_content, 'http://localhost/phoenoxmedia.co.uk', 'https://phoenoxmedia.co.uk');
+  
+UPDATE wpqw_postmeta SET meta_value = replace(meta_value,'http://localhost/phoenoxmedia.co.uk','https://phoenoxmedia.co.uk');
