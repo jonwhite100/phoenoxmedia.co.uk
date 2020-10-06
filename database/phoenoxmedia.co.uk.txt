@@ -8,3 +8,10 @@ UPDATE wpqw_options SET option_value = replace(option_value, 'http://localhost/p
 UPDATE wpqw_posts SET post_content = replace(post_content, 'http://localhost/phoenoxmedia.co.uk', 'https://phoenoxmedia.co.uk');
   
 UPDATE wpqw_postmeta SET meta_value = replace(meta_value,'http://localhost/phoenoxmedia.co.uk','https://phoenoxmedia.co.uk');
+
+
+DB local Mac
+------------
+phoenox_word
+phoenox_word
+Trouble-bad-hole
