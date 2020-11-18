@@ -1,5 +1,11 @@
-
+.section-lead {
+	p {
+		&:first-child {
+			font-size: 20px;
+		}
+	}
+}
 
 .section-services {
-	background-image: url('#{$path-to-uploads}uploads/2019/11/microphone-CANTUSE.jpg');
+	background-image: url('#{$path-to-uploads}uploads/2019/11/microphone1.jpg');
 }

@@ -1,0 +1,24 @@
+// set margin at top of page to account for fixed nav
+.site {
+	margin-top: $s-site-margin-top-sm;
+
+	@include media-breakpoint-up(md) {
+		margin-top: $s-site-margin-top-md;
+	}
+
+	@include media-breakpoint-up(lg) {
+		margin-top: $s-site-margin-top-lg;
+	}
+}
+
+// entry header and title
+.entry-header {
+	padding-top: $s-md;
+	padding-bottom: $s-md;
+	color: $primary;
+	background-color: $black;
+}
+
+.entry-title {
+	text-align: center;
+}

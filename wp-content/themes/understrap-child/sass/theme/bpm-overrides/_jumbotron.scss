@@ -1,16 +1,16 @@
 .jumbotron {
-	min-height: $s-jumbotron-height;
+	min-height: $s-jumbotron-height-xs;
 
 	@include media-breakpoint-up(md) {
-		min-height: $s-jumbotron-height / 1.5;
+		min-height: $s-jumbotron-height-md;
 	}
 
 	@include media-breakpoint-up(lg) {
-		min-height: $s-jumbotron-height - $s-xl;
+		min-height: $s-jumbotron-height-lg;
 	}
 
 	@include media-breakpoint-up(xl) {
-		min-height: $s-jumbotron-height;
+		min-height: $s-jumbotron-height-xl;
 	}
 }
 

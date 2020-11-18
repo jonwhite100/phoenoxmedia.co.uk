@@ -5,6 +5,17 @@
 // Thats the ugly Bootstrap blue used for all the links, primary buttons etc.
 // Just add your color code here, compile the theme.scss file to change this color everywhere
 
+$s-sm: $spacer; // 16px
+$s-xs: $s-sm / 2; // 8px
+$s-xxs: $s-xs / 2; // 4px
+$s-md: $s-sm * 2; // 32px
+$s-lg: $s-md * 2; // 64px
+$s-xl: $s-lg + $s-md; // 96px
+
+$section-space-md: $spacer * 4;
+$section-space-lg: $spacer * 6;
+$section-space-xl: $spacer * 8;
+
 // Buttons
 $c-btn-pulse: rgba($secondary, 0) !default;
 
@@ -21,6 +32,11 @@ $headings-font-family: 'Open Sans Condensed', sans-serif !default;
 $headings-font-weight: 400 !default;
 $headings-text-transform: 'none' !default;
 
+$font-size-base: $spacer !default; // 16px
+$h1-font-size: $font-size-base * 1.5 !default; // 24px
+$h2-font-size: $font-size-base * 1.5 !default;
+$h3-font-size: $font-size-base * 1.5 !default;
+
 // Footer widgets
 $c-wrapper-footer-widgets: $white !default;
 $c-wrapper-footer-widgets-bg: $primary !default;
@@ -32,13 +48,24 @@ $c-wrapper-footer-bg: $black !default;
 
 $c-footer-menu-link: $white !default;
 
+// Site (comes befor Jombotron becasue of use of variables)
+$s-site-margin-top-sm: $s-xl;
+$s-site-margin-top-md: $s-lg + $s-sm;
+$s-site-margin-top-lg: $s-xl * 1.25;
+
 // Jumbotron
 $c-jumbotron-h1: $white !default;
 $c-jumbotron-h2: $primary !default;
 $c-jumbotron-h2-bg: transparent !default;
 $c-jumbotron-base-bg: $white !default;
-$s-jumbotron-height: $s-xl * 9 !default;
 $jumbotron-bg: lighten($secondary, 35%) !default;
+
+$s-jumbotron-height: 100vh !default; // TODO: put this and the Site (see above) into JMWhite properly
+$s-jumbotron-height-xs: 100vh;
+$s-jumbotron-height-sm: calc(#{$s-jumbotron-height} - #{$s-site-margin-top-sm});
+$s-jumbotron-height-md: calc(#{$s-jumbotron-height} - #{$s-site-margin-top-md});
+$s-jumbotron-height-lg: calc(#{$s-jumbotron-height} - #{$s-site-margin-top-lg});
+$s-jumbotron-height-xl: 90vh;
 
 // Navbar
 $navbar-light-color:                $primary !default;
